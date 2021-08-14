@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Virtual Comic Store</title>
+        <script src = 'https://aframe.io/releases/1.0.4/aframe.min.js'></script>
+        <script src = 'comic.js'></script>
+        <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+    </head>
+    <body>
+        <a-scene id = 'main scene' background='color:#90caf9'>
+
+            <a-camera id = 'camera' wasd-controls='enabled:false;' position = '0 10 20'></a-camera>
+
+            <!--Ground-->
+            <a-plane
+                id = 'ground'
+                color = '#78909c'
+                width = '200'
+                height = '100'
+                rotation = '-90 0 0'>
+            </a-plane>
+
+            <!--Poster Container-->
+            <a-entity id = 'poster-container' comic-posters></a-entity>
+
+            <a-entity 
+            id = 'title' 
+            position = '0 25 -1'
+            text = 'align:center; width:50; color:black; font:exo2bold; value: Virtual Comic Store !'></a-entity>
+            
+            <a-entity 
+            id = 'subTitle' 
+            position = '0 23 -1'
+            text = 'align:center; width:25; color:black; font:dejavu; value: Get Your Favourite Comics'></a-entity>
+
+            
+
+        </a-scene>
+    </body>
+</html>
