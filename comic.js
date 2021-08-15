@@ -6,24 +6,24 @@ AFRAME.registerComponent('comic-posters',{
     createCards:function(){
         const thumbnailsRef = [
             {
-                id:'spiderman',
-                title:'Spider Man',
-                url:'./images/spiderMan.png'
+                id:'aladdin',
+                title:'Aladdin',
+                url:'./images/aladdin.png'
             },
             {
-                id:'justiceliague',
-                title:'Justice League',
-                url:'./images/justiceleague.jpg'
+                id:'junglebook',
+                title:'Junglr Book',
+                url:'./images/jungle.png'
             },
             {
-                id:'superman',
-                title:'Adventures of Super Man',
-                url:'./images/superman.jpg'
+                id:'lionking',
+                title:'The Lion King',
+                url:'./images/lionking.jpg'
             },
             {
-                id:'avengers',
-                title:'The Avengers',
-                url:'./images/avengers.jpg'
+                id:'tomandjerry',
+                title:'Tom and Jerry',
+                url:'./images/tomandjerry.jpg'
             }
         ]
 
